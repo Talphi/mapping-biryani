@@ -8,8 +8,7 @@
   <!-- D3 -->
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <link rel="stylesheet" href="style.css">
-
-
+  
   <!-- CSS for Scrollytelling -->
   <style>
     /* smooth creates a rewind / speed up effect when jumping between sections of the page */
@@ -23,7 +22,7 @@
       /* 'transform' is included to ensure z-index works properly on all kinds of devices */
       transform: translate3d(0, 0, 0); 
     }
-
+    
     #scrollytelling {
       /* 'position:relative' allows the scrollytelling section to be positioned in a custom way */
       position: relative;
@@ -150,6 +149,8 @@
           <img src="img/9.png" height="100%" width ="auto" id="imgV9" style="opacity:0">
           <img src="img/10.png" height="100%" width ="auto" id="imgV10" style="opacity:0">
           <img src="img/11.png" height="100%" width ="auto" id="imgV11" style="opacity:0">
+          <img src="img/12.png" height="100%" width ="auto" id="imgV12" style="opacity:0">
+          <img src="img/13.png" height="100%" width ="auto" id="imgV13" style="opacity:0">
           
         </div>
       </figure>
@@ -160,57 +161,67 @@
 
         <!-- Message #1 -->
         <div class="step">
-          <p>Bengalis are biryani lovers. It's that simple. We don't need special occasions to eat Biryani. In fact, there are so many biryani joints in the city, that everyday is biryani day if we want it to be.</p>
+          <p>Bengalis are biryani lovers. It's that simple. We don't need special occasions to eat biryani. In fact, there are so many biryani joints in the city, that everyday is biryani day if we want it to be.</p>
         </div>
         
         <!-- Message #2 -->
         <div class="step">
-          <p>On the album cover, Khaled's hairlines were made sharper with the help of a razor.</p>
+          <p>If you ask most people where you get the best Kolkata Biryani, they'll probably either say Aminia, or Arsalan.</p>
         </div>
 
         <!-- Message #3 -->
         <div class="step">
-          <p>The lion's hair is just like that naturally.</p>
+          <p>But, beyond these, there's a plethora of flavours to try out.</p>
         </div>
 
         <!-- Message #4 -->
         <div class="step">
-          <p>The lion's hair is just natural.</p>
+          <p>I started by first mind-mapping the biryani joints I had discovered, with the help of landmarks, and main roads.</p>
         </div>
 
         <!-- Message #5 -->
          <div class="step">
-            <p>The lion's hair is just natural.</p>
+            <p>And then seeing how they fit on an actual map of Kolkata.</p>
           </div>
 
         <!-- Message #6 -->
         <div class="step">
-          <p>The lion's hair is just natural.</p>
+          <p>The map was too complex for new comers, so I decided to begin abstracting it.</p>
         </div>
 
         <!-- Message #7 -->
         <div class="step">
-          <p>The lion's hair is just natural.</p>
+          <p>I focused on the roads once again, the parks, and the Ganga.</p>
         </div>
 
           <!-- Message #8 -->
           <div class="step">
-            <p>The lion's hair is just natural.</p>
+            <p>And then quickly plotting the metro lines, and biryani joints.</p>
           </div>
 
             <!-- Message #9 -->
         <div class="step">
-          <p>The lion's hair is just natural.</p>
+          <p>I needed some inspiration for the visual design.</p>
         </div>
 
           <!-- Message #10 -->
           <div class="step">
-            <p>The lion's hair is just natural.</p>
+            <p>And even checked out islamic artwork.</p>
           </div>
 
             <!-- Message #11 -->
         <div class="step">
-          <p>The lion's hair is just natural.</p>
+          <p>I tried a playful style of annotation to start of with.</p>
+        </div>
+
+           <!-- Message #12 -->
+           <div class="step">
+            <p>But wanted to try something more 'Nawabi'.</p>
+          </div>
+
+             <!-- Message #13 -->
+        <div class="step">
+          <p>After a few iterations this is what I came up with.</p>
         </div>
 
       </article>
@@ -224,8 +235,6 @@
   
   </main>
 
-
-  <p style="text-align : center"><br><a href="https://www.thrum.engineering/scrollytelling">Learn More About Scrollytelling</a><br></p>
   
   <!-- Scrollama javaScript -->
   <script src="https://unpkg.com/intersection-observer"></script>
@@ -264,6 +273,8 @@
     var imgV9 = d3.select('#imgV9');
     var imgV10 = d3.select('#imgV10');
     var imgV11 = d3.select('#imgV11');
+    var imgV12 = d3.select('#imgV12');
+    var imgV13 = d3.select('#imgV13');
 
     var article = d3.select('article');
     var steps = d3.selectAll('.step');
@@ -300,6 +311,8 @@
       imgV9.style('left', imgMargin + 'px')
       imgV10.style('left', imgMargin + 'px')
       imgV11.style('left', imgMargin + 'px')
+      imgV12.style('left', imgMargin + 'px')
+      imgV13.style('left', imgMargin + 'px')
 
       // 4. tell scrollama to update new element dimensions. Not always necessary, but included just to be safe.
       myScrollama.resize();
@@ -329,6 +342,8 @@
           imgV9.style("opacity", "0")
           imgV10.style("opacity", "0")
           imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
           break;
         
         case 1:
@@ -344,6 +359,8 @@
           imgV9.style("opacity", "0")
           imgV10.style("opacity", "0")
           imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
           break;
 
         case 2:
@@ -359,6 +376,8 @@
           imgV9.style("opacity", "0")
           imgV10.style("opacity", "0")
           imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
           break;
 
         case 3:
@@ -374,6 +393,8 @@
           imgV9.style("opacity", "0")
           imgV10.style("opacity", "0")
           imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
           break;
 
           case 4:
@@ -389,6 +410,8 @@
           imgV9.style("opacity", "0")
           imgV10.style("opacity", "0")
           imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
           break;
 
           case 5:
@@ -404,6 +427,8 @@
           imgV9.style("opacity", "0")
           imgV10.style("opacity", "0")
           imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
           break;
 
           case 6:
@@ -419,6 +444,8 @@
           imgV9.style("opacity", "0")
           imgV10.style("opacity", "0")
           imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
           break;
 
           case 7:
@@ -434,6 +461,8 @@
           imgV9.style("opacity", "0")
           imgV10.style("opacity", "0")
           imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
           break;
 
           case 8:
@@ -449,6 +478,8 @@
           imgV9.style("opacity", "1")
           imgV10.style("opacity", "0")
           imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
           break;
 
           case 9:
@@ -464,6 +495,8 @@
           imgV9.style("opacity", "0")
           imgV10.style("opacity", "1")
           imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
           break;
 
           case 10:
@@ -479,9 +512,44 @@
           imgV9.style("opacity", "0")
           imgV10.style("opacity", "0")
           imgV11.style("opacity", "1")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "0")
           break;
 
-                   
+          case 11:
+          // Set image to third version
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "1")
+          imgV13.style("opacity", "0")
+          break;
+
+          case 12:
+          // Set image to third version
+          imgV1.style("opacity", "0")
+          imgV2.style("opacity", "0")
+          imgV3.style("opacity", "0")
+          imgV4.style("opacity", "0")
+          imgV5.style("opacity", "0")
+          imgV6.style("opacity", "0")
+          imgV7.style("opacity", "0")
+          imgV8.style("opacity", "0")
+          imgV9.style("opacity", "0")
+          imgV10.style("opacity", "0")
+          imgV11.style("opacity", "0")
+          imgV12.style("opacity", "0")
+          imgV13.style("opacity", "1")
+          break;
+                
 
         default:
           // do nothing
